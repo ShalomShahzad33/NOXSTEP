@@ -24,12 +24,14 @@ const FeaturedItems = () => {
     });
 
     return (
-        <section className="h-screen mt-5 text-center p-4">
+        <section className="mt-5 text-center p-4">
             <h1 className="text-white mb-6 text-3xl">FeaturedItems</h1>
-            <div className="items grid md:grid-cols-4 gap-6">
+            <div className="items grid md:grid-cols-4 gap-6 items-top">
                 {products.map((product) => (
-                    <div key={product.id} className="card bg-white flex md:flex-col justify-center items-center rounded-2xl md:rounded-none flex-1 grow">
-                        <img src={product.img_path} alt={product.alt_text} className="w-1/2 rounded-2xl md:h-1/2 md:w-full self-start md:p-0 md:rounded-none grow h-full object-cover" />
+                    <div key={product.id} className="card bg-white flex md:flex-col justify-center items-center rounded-2xl md:rounded-none overflow-hidden">
+                        <div className="w-full h-56 md:h-64 grow">
+                            <img src={product.img_path} alt={product.alt_text} className="w-full h-full block object-cover object-center" />
+                        </div>
                         <div className="Texts w-1/2 flex flex-col justify-center items-center rounded-2xl gap-2 p-1">
                             <h2 className="text-blue-950 text-2xl">{product.name}</h2>
                             <div className="flex gap-3 items-center md:gap-10">
