@@ -25,7 +25,7 @@ const FeaturedItems = () => {
 
     return (
         <section className="mt-5 text-center p-4">
-            <h1 className="text-white mb-6 text-3xl">FeaturedItems</h1>
+            <h1 className="text-white mb-6 text-3xl">Featured Items</h1>
             <div className="items grid md:grid-cols-4 gap-6 items-top">
                 {products.map((product) => (
                     <div key={product.id} className="card bg-white flex md:flex-col justify-center items-center rounded-2xl md:rounded-none overflow-hidden">

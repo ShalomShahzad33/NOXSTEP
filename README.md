@@ -1,16 +1,73 @@
-# React + Vite
+# NOXSTEP 👟
+*A modern footwear landing page built with React, Tailwind CSS, and GSAP*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Overview
+NOXSTEP is a sleek, animated footwear landing page designed to showcase modern UI motion and clean component architecture. The project focuses on performance-driven animations, responsive layouts, and a strong visual brand identity.
 
-Currently, two official plugins are available:
+Built with **React**, styled using **Tailwind CSS**, and animated with **GSAP**, this project demonstrates advanced front-end techniques suitable for real-world applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
+- ⚡ Smooth GSAP animations with timelines and ScrollTrigger
+- 🎯 SplitText animations for engaging typography
+- 📱 Fully responsive layout (mobile-first)
+- 🧩 Clean, reusable React component structure
+- 🛍️ Dynamic featured products rendered from constants
+- 🎨 Modern UI with a strong brand identity
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **React**
+- **Tailwind CSS**
+- **GSAP**
+    - ScrollTrigger
+    - SplitText
+- **JavaScript (ES6+)**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+src/
+├── components/
+│ ├── Hero.jsx
+│ ├── About.jsx
+│ ├── FeaturedItems.jsx
+│ └── Footer.jsx
+├── constants/
+│ └── products.js
+├── assets/
+│ └── images/
+└── App.jsx
+
+---
+
+## 🎬 Animations
+- **Hero Section**
+    - Character-based text animation using SplitText
+    - Button and image entrance animations
+    - Floating hero image loop animation
+
+- **About Section**
+    - Scroll-triggered image reveal animation
+    - Word-by-word text animation with rotation and opacity
+
+- **Featured Items**
+    - Staggered card reveal on scroll
+
+---
+
+## 🖼️ Assets & Credits
+- Product images sourced from **Myntra**, **Pexels**, and **PNGwing**
+- Designed and developed by **Shalom Shahzad**
+
+---
+
+## 🧪 Installation & Setup
+
+```bash
+git clone https://github.com/your-username/noxstep.git
+cd noxstep
+npm install
+npm run dev
