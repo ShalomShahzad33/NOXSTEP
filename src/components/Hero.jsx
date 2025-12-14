@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/Hero-img.png";
+import HeroImage from "../assets/images/Hero-img.png";
 import {useGSAP} from "@gsap/react";
 import SplitText from "gsap/SplitText";
 import gsap from "gsap";
