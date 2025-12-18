@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import products from "../constants/products.js";
 import gsap from "gsap";
 import {useGSAP} from "@gsap/react";
@@ -8,10 +8,12 @@ const FeaturedItems = () => {
 
     gsap.registerPlugin(ScrollTrigger)
 
+    const cardWrapper = useRef(null)
+
     useGSAP(() => {
         gsap.from('.card', {
             scrollTrigger: {
-                trigger: '.items',
+                trigger: cardWrapper.current,
                 start: "top 80%",
                 end: "bottom top",
             },
@@ -21,12 +23,12 @@ const FeaturedItems = () => {
             duration: 1,
             stagger: 0.5,
         })
-    });
+    }, {scope: cardWrapper});
 
     return (
         <section className="mt-5 text-center p-4">
             <h1 className="text-white mb-6 text-3xl">Featured Items</h1>
-            <div className="items grid md:grid-cols-4 gap-6 items-top">
+            <div className="items grid md:grid-cols-4 gap-6 items-top" ref={cardWrapper}>
                 {products.map((product) => (
                     <div key={product.id} className="card bg-white flex md:flex-col justify-center items-center rounded-2xl md:rounded-none overflow-hidden">
                         <div className="w-full h-56 md:h-64 grow">
