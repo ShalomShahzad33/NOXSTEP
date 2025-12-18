@@ -17,7 +17,7 @@ const FeaturedItems = () => {
             },
             opacity: 0,
             y: 20,
-            ease: "bounce",
+            ease: "power3",
             duration: 1,
             stagger: 0.5,
         })
@@ -35,7 +35,7 @@ const FeaturedItems = () => {
                         <div className="Texts w-1/2 flex flex-col justify-center items-center rounded-2xl gap-2 p-1">
                             <h2 className="text-blue-950 text-2xl">{product.name}</h2>
                             <div className="flex gap-3 items-center md:gap-10">
-                                <span className="text-3xl">{product.price}</span>
+                                <span className="text-3xl">${product.price}</span>
                                 <span className="text-sm text-gray-600 md:text-lg">{product.category}</span>
                             </div>
                             <button className="bg-slate-900 text-white px-2 py-1 rounded-lg hover:bg-slate-800 hover:cursor-pointer mt-2 mb-2 md:px-4 md:py-2">Buy Now</button>
